@@ -20,7 +20,7 @@ weatherForm.addEventListener("submit", (e) => {
     const inputField = document.querySelector("input");
     const inputValue = inputField.value;
     const mainContent = document.querySelector(".main-content");
-    const weatherLink = `http://localhost:3000/weather?address=${inputValue}`;
+    const weatherLink = `/weather?address=${inputValue}`;
     const output = document.createElement("p");
     output.classList.add("output");
 
