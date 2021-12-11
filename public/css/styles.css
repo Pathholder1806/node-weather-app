@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+header {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+header ul {
+    margin: auto;
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    margin-right: 0.5rem;
+    border-right: 1px solid #333;
+}
+
+header li:last-child {
+    border-right: none;
+}
+
+header a {
+    color: #888;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.potrait {
+    width: 45rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    border: 0.5px solid #333;
+    border-radius: 0.1rem;
+    outline: none;
+    padding: 0.5rem;
+    transition: all 0.1s ease-in-out;
+}
+
+input:focus {
+    border: 1px solid green;
+    outline: none;
+    padding: 0.5rem;
+}
+
+button {
+    padding: 0.5rem;
+    font-weight: bold;
+    border: 0.5px solid #333;
+    outline: none;
+    border-radius: 0.1rem;
+}
+
+.output {
+    margin-top: 2rem;
+}
+
+.success {
+    color: #333;
+}
+
+.error {
+    color: brown;
+}
+
+footer {
+    color: #888;
+    border-top: 1px solid #eee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
