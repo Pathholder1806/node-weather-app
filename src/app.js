@@ -52,24 +52,6 @@ app.get("/help", (req, res) => {
     });
 });
 
-// // localhost:3000/
-// app.get("", (req, res) => {
-//     res.send("<h1>Hello Express!</h1>");
-// });
-
-// // localhost:3000/help
-// app.get("/help", (req, res) => {
-//     res.send({
-//         name: "Yashjeet Singh",
-//         age: 22,
-//     });
-// });
-
-// // localhost:3000/about
-// app.get("/about", (req, res) => {
-//     res.send("<h1>About page</h1>");
-// });
-
 // localhost:3000/weather
 app.get("/weather", (req, res) => {
     if (!req.query.address) {
@@ -103,19 +85,6 @@ app.get("/weather", (req, res) => {
         }
     });
 });
-
-// app.get("/products", (req, res) => {
-//     if (!req.query.search) {
-//         return res.send({
-//             error: "Please provide a search term",
-//         });
-//     }
-
-//     console.log(req.query);
-//     res.send({
-//         products: [],
-//     });
-// });
 
 app.get("/help/*", (req, res) => {
     res.render("help-error", {
